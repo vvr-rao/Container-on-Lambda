@@ -20,7 +20,7 @@ def handler(event, context):
     
     out = {1: 'Negative', 2: 'Neutral', 3: 'Positive'}
     
-    output = print(out[0])
+    output = out[my_prediction[0]]
     #Resp = [{"response": output}]
     #response = {"statusCode": 200, "body": json.dumps(Resp)}
     {"Sentiiment": output}
