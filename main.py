@@ -16,12 +16,12 @@ def handler(event, context):
     string1 = string1.replace('[^\w\s]', '') # remove punctuation
     new_data.append(string1)
     
-    my_prediction = clf.predict(data)
+    my_prediction = clf.predict(new_data)
     
     out = {1: 'Negative', 2: 'Neutral', 3: 'Positive'}
     
     output = out[my_prediction[0]]
     #Resp = [{"response": output}]
     #response = {"statusCode": 200, "body": json.dumps(Resp)}
-    response = {"Sentiiment": output}
+    response = {"Input": data, "Sentiment": output}
     return response
