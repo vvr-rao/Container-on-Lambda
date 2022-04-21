@@ -8,7 +8,13 @@ Steps to Deploy;
 1) Push the Docker Image to AWS Elastic Container Registry
 2) Expose the Container in Lambda
 3) Create a version and an Alias of the function and configure Provisioned Concurrency
-4) Create an API Gateway endpoint to point to the create Lambda function
+4) Create an API Gateway endpoint to point to the created Lambda function
+
+## Sample Input (POST)
+{
+  "data": "plenty of funny quotes but ultimately fell flat"
+}
+
 
 
 
