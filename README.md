@@ -10,7 +10,7 @@ Steps to Deploy;
 3) Create a version and an Alias of the function and configure Provisioned Concurrency
 4) Create an API Gateway endpoint to point to the created Lambda function
 
-## Sample Input (POST)
+### Sample Input (POST)
 {
   "data": "plenty of funny quotes but ultimately fell flat"
 }
