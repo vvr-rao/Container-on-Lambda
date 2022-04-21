@@ -23,5 +23,5 @@ def handler(event, context):
     output = out[my_prediction[0]]
     #Resp = [{"response": output}]
     #response = {"statusCode": 200, "body": json.dumps(Resp)}
-    {"Sentiiment": output}
+    response = {"Sentiiment": output}
     return response
