@@ -1,8 +1,8 @@
 import json
 def handler(event, context):
-    tomatoes = [{"name": "Red Tomato", "price": "30 Rs"},
-            {"name": "Yellow Tomato", "price": "35 Rs"},
-            {"name": "Small Tomato", "price": "20 Rs"}]
-    tomatoesList = {"tomatoes": tomatoes}
-    response = {"statusCode": 200, "body": json.dumps(tomatoesList)}
+    data = json.loads(json.dumps(event))
+    payload = data['data']
+    output = "Hello " + Payload
+    Resp = [{"response": output}]
+    response = {"statusCode": 200, "body": json.dumps(Resp)}
     return response
