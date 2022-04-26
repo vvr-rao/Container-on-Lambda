@@ -7,8 +7,12 @@ def handler(event, context):
     clf = joblib.load(model)
     
     #read the input string
-    data = json.loads(json.dumps(event))
-    payload = data['data']
+    #data = json.loads(json.dumps(event))
+    #payload = data['data']
+    data = json.loads(event['body'])
+    data1 = json.loads(json.dumps(data))
+    payload = data1['data']
+    
     
     new_data = []
     
