@@ -19,7 +19,7 @@ Official documentation here - https://www.serverless.com/framework/docs/getting-
 5) Issues: I needed to log into the API Gateway and tweak it as follows:
         a) modified the Integration Request to uncheck "Use Lambda Proxy integration" (I guess I wrote my code to not use that)
         b) added a new Method Response - HTTP 200 - which did not get created by default (no clue why)
-7) IMPORTANT!!! - Delete by using "serverless remove" or you will get an hefty bill
+7) IMPORTANT!!! - Delete by using "serverless remove" or you will get a hefty bill!
       
 
 
