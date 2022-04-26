@@ -1,16 +1,19 @@
-service: my-service
+service: myservice
 provider:
   name: aws
   ecr:
     images:
-      appimage:
+      myimage:
         path: ./
 functions:
   get_sentiment:
     image:
-      name: appimage
-      timeout: 300
-      memorySize: 512
-      provisionedConcurrency: 3
-      reservedConcurrency: 5
-
+      name: myimage
+    timeout: 300
+    memorySize: 512
+    provisionedConcurrency: 3
+    reservedConcurrency: 5
+    events:
+      - http:
+          path: qa # http path
+          method: post # http method
