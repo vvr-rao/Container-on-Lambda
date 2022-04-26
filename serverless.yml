@@ -1,4 +1,4 @@
-service: aws-container-lambda
+service: my-service
 framework Version: "2"
 provider:
   name: aws
@@ -11,3 +11,6 @@ functions:
   get_sentiment:
     image:
       name: appimage
+      timeout: 300
+      memorySize: 512
+
