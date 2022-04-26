@@ -13,4 +13,6 @@ functions:
       name: appimage
       timeout: 300
       memorySize: 512
+      provisionedConcurrency: 3
+      reservedConcurrency: 5
 
