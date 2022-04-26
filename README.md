@@ -22,7 +22,7 @@ Official documentation here - https://www.serverless.com/framework/docs/getting-
 7) IMPORTANT!!! - Delete by using "serverless remove" or you will get a hefty bill!
       
 
-Also included code for a Lighting AUra Component to call the API from Salesforce. This can be exposed as an Action on a Record and is a way to consume the Model.
+Also included code for a Lighting Aura Component to call the API from Salesforce. This can be exposed as an Action on a Record and is a way to consume the Model.
 
 ### Sample Input (POST)
 {
