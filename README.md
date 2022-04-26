@@ -16,10 +16,8 @@ Official documentation here - https://www.serverless.com/framework/docs/getting-
 2) Download this repository (serverless create -u https://github.com/vvr-rao/Container-on-Lambda -n my-project)
 3) cd into the project folder and deploy: (serverless deploy)
 4) The serverless.yml should provision an image on ECR, create a Lambda with Provisioned and Reserved Concurrency, create an API Gateway endpoint and CloudFornt templates
-5) Issues: I needed to log into the API Gateway and tweak it as follows:
-        a) modified the Integration Request to uncheck "Use Lambda Proxy integration" (I guess I wrote my code to not use that)
-        b) added a new Method Response - HTTP 200 - which did not get created by default (no clue why)
-7) IMPORTANT!!! - Delete by using "serverless remove" or you will get a hefty bill!
+5) Note: make sure your code is built to support the format of "Use Lambda Proxy Integration" or you get a number of annoying errors
+6) IMPORTANT!!! - Delete by using "serverless remove" or you will get a hefty bill!
       
 
 Also included code for a Lighting Aura Component to call the API from Salesforce. This can be exposed as an Action on a Record and is a way to consume the Model.
