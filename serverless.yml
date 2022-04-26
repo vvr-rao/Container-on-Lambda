@@ -1,8 +1,6 @@
 service: my-service
-framework Version: "2"
 provider:
   name: aws
-  lambdaHashingVersion: 20201221
   ecr:
     images:
       appimage:
