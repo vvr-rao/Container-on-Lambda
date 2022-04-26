@@ -12,7 +12,7 @@ Steps to Deploy(without using serverless cli):
 
 Steps to Deploy(using Serverless cli):
 Official documentation here - https://www.serverless.com/framework/docs/getting-started
-1) Download serverles cli. (curl -o- -L https://slss.io/install | bash  for Linux)
+1) Download serverles cli. (curl -o- -L https://slss.io/install | bash  --  for Linux)
 2) Download this repository (serverless create -u https://github.com/vvr-rao/Container-on-Lambda -n my-project)
 3) cd into the project folder and deploy: (serverless deploy)
 4) The serverless.yml should provision an image on ECR, create a Lambda with Provisioned and Reserved Concurrency, create an API Gateway endpoint and CloudFornt templates
