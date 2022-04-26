@@ -8,6 +8,6 @@ provider:
       appimage:
         path: ./
 functions:
-  hello:
+  get_sentiment:
     image:
       name: appimage
