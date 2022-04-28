@@ -13,7 +13,7 @@
                  		//$A.get("e.force:closeQuickAction").fire(); 
     			 		//$A.get('e.force:refreshView').fire();                 
   				 		}), 
-                    500); // Waits 5 seconds
+                    500); // Wait
                 $A.get("e.force:closeQuickAction").fire(); 
                 $A.get('e.force:refreshView').fire();
             }
