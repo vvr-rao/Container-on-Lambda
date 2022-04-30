@@ -2,6 +2,8 @@
 
 Docker Container which can be deployed on AWS Lambda. I have tested this with a Provisioned Concurrency of 200 and exposed this as a REST API via API Gateway
 
+Here is my blog post explaining the details on how to host the model on Lambda and consume it from Salesforce: https://medium.com/@venkat.ramrao/deploy-your-nlp-model-on-lambda-for-use-from-salesforce-4fac91da41a8
+
 The code uses a pretrained NLP model to predict sentiment
 
 Steps to Deploy(without using serverless cli):
